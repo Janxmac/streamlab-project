@@ -1,0 +1,26 @@
+.navbar {padding: 0}
+header {height: 120px;box-shadow: none;background: transparent;transition: height .3s ease-in-out,background .3s ease-in-out}
+header .logo {top: 50%;transform: translateY(-50%)}
+header .logo svg {width: 60px;height: 51px}
+header ul.topbar {top: 50%;transform: translateY(-50%);position: relative}
+header ul.topbar > li {display: inline-block;}
+header ul.topbar > li > a {padding: 10px 0;display: flex;align-items: center;height: 100%;color: $white;transition: color .3s ease-in-out;font-size: 14px;letter-spacing: 0}
+header ul.topbar > li > a:hover,
+header ul.topbar > li > a:focus {color: $colorPink}
+header ul.topbar > li > a i {font-size: 1.6rem}
+header ul.topbar > li + li {margin-left: 17px}
+
+header ul.topbar > li > a.nav__btn {background: #330A8B;padding: 10px 15px;border-radius: 7px;}
+header ul.topbar > li > a .nav__link-user-pic {width: 41px;height: 41px;background-position: center;background-size: cover;border-radius: 50%}
+header ul.topbar > li > a .nav__link-icon.icon--bold i::before {font-weight: bold}
+header ul.topbar > li > a .nav__link-icon.icon--gradient {background: linear-gradient(180deg, #ad5beb 25%, #c678db 50%, #da6ea9 75%, #e76e92 100%);background-clip: text;-webkit-text-fill-color: transparent}
+
+//header-fixed
+header.header--fixed {position: fixed;z-index: 101}
+
+// condensed (on scroll)
+header.navbar--condensed {background: $colorPurpleLighter;height:90px}
+
+@media ($media-m-max) {
+  header .container {max-width: 100%}
+}

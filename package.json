@@ -1,0 +1,51 @@
+{
+  "name": "react-redux-registration-login-example",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cornflourblue/react-redux-registration-login-example.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "history": "^4.6.3",
+    "react": "^16.0.0",
+    "react-axios": "^2.0.3",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "bootstrap": "4.2.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.14.5",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react-transition-group": "^2.5.1",
+    "react-wow": "^1.0.0",
+    "reactstrap": "^6.5.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

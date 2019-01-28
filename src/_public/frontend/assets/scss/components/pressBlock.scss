@@ -1,0 +1,24 @@
+.pressBlock {padding: 80px 0 0}
+.pressBlock .items {margin-top: 30px;margin-bottom: 66px}
+.pressBlock .item + .item {margin-top: 25px}
+.pressBlock .item .bg-wrap {background: $colorPurpleLighter;border-radius: 7px}
+.pressBlock .item .logo {display: flex;justify-content: center;align-items: center;height: 80px;background: $white;text-align: center;border-top-left-radius: 7px;border-top-right-radius: 7px}
+.pressBlock .item .content {padding: 17px}
+.pressBlock .item .content .title {font-size: 19px;letter-spacing: 0.015em;}
+.pressBlock .item .content .text {line-height: 2em;letter-spacing: 0;margin-top: 13px}
+.pressBlock .item .content a {text-decoration: underline;color: $white;font-family: $font-family-second;margin-top: 9px;display: inline-block;font-weight: 500}
+.pressBlock .item .content a:hover,
+.pressBlock .item .content a:focus {color: $colorPink}
+.pressBlock .users,
+.pressBlock .vids {font-family: 'Roboto Mono', monospace;font-size: 20px;color: #270470;text-align: center}
+
+@media ($media-m-min) {
+  .pressBlock .users, .pressBlock .vids {font-size: 30px}
+  .pressBlock .users {text-align: left}
+  .pressBlock .vids {text-align: right}
+}
+
+@media ($media-l-min) {
+  .pressBlock .item + .item {margin-top: 0}
+  .pressBlock .users, .pressBlock .vids {font-size: 40px}
+}

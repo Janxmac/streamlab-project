@@ -1,0 +1,25 @@
+// Colors
+$colorPurple: #330A8B;
+$colorPurpleLighter: #4104C2;
+$colorPurpleDarker: #1F0062;
+$colorPink: #DC2064;
+
+//text|bg
+$text: $white;
+$background: #19191d;
+$backgroundGrey: #f5f1f1;
+
+// Default font settings
+$text-color-default: $text;
+$font-family-default: 'Poppins', sans-serif;
+$font-family-second: 'Roboto', sans-serif;
+$font-size-default: 14px;
+$font-weight-default: 400;
+$font-height-default: 1.5;
+
+// Titles font settings
+$font-weight-title: $font-weight-default;
+
+// Link font settings
+$font-color-link: $colorPink;
+$font-weight-link: 400;

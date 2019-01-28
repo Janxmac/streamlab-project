@@ -1,0 +1,13 @@
+footer {padding: 30px;}
+footer .container {margin-top: 48px}
+footer ul {text-align: center}
+footer ul li {display: inline-block;font-family: $font-family-second}
+footer ul li + li {margin-left: 15px}
+footer ul li a {text-decoration: underline;color: $white;font-family: $font-family-second;font-weight: 500}
+footer ul li a:hover,
+footer ul li a:focus {color: $colorPink}
+footer ul li.rights {font-weight: 400}
+
+@media ($media-m-min) {
+  footer ul {text-align: right}
+}

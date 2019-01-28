@@ -1,0 +1,25 @@
+.socialBlock {padding: 50px 0 80px}
+.socialBlock .item {display: flex}
+.socialBlock .item .right-content {flex-direction: column;margin: 16px 0;background: $colorPurpleLighter;padding: 17px;display: flex;border-radius: 7px}
+.socialBlock .item .left-content {width: 150px;flex: 0 0 auto;display: none}
+.socialBlock .item .left-content .number {position: absolute;top: 50%;transform: translateY(-50%);;font-size: 70px;font-weight: 700;color: #4104C2;}
+.socialBlock .item .left-content .bullet {z-index: 1;width: 24px;height: 24px;background: $colorPurpleLighter;border-radius: 50%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.socialBlock .item .left-content::before {content: '';position: absolute;width: 1px;height: 50%;background: $colorPurpleLighter;top: 0;left: 50%;}
+.socialBlock .item .left-content::after {content: '';position: absolute;width: 1px;height: 50%;background: $colorPurpleLighter;top: 50%;left: 50%;}
+.socialBlock .item:first-of-type .left-content::before {display: none}
+.socialBlock .item:last-of-type .left-content::after {display: none}
+.socialBlock .item svg {width: 100%;max-height: 90px}
+.socialBlock .item .content {margin-top: 20px}
+.socialBlock .item .title {font-size: 20px;font-weight: 500;}
+.socialBlock .item .text {margin-top: 7px;letter-spacing: 0.005em;line-height: 1.8em}
+.socialBlock .item .image {width: 60px;flex: 0 0 auto;display: flex;align-items: center}
+
+@media ($media-m-min){
+  .socialBlock .item .left-content {display: block}
+  .socialBlock .item .right-content {flex-direction: row;padding: 17px 60px 17px 17px;}
+  .socialBlock .item .content {margin-left: 20px;margin-top: 0}
+}
+
+@media ($media-l-min){
+  .socialBlock .item .image {width: 100px;display: block}
+}

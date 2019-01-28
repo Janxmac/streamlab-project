@@ -1,0 +1,55 @@
+body *:focus {outline:none}
+div, section, article, header, figure, nav, footer, label, main, button, aside, form {position:relative}
+img {max-width:100%}
+a {text-decoration:none; transition:color 300ms;color: $font-color-link;font-weight: $font-weight-link;cursor: pointer}
+a:focus,
+a:hover {text-decoration:none;color: $colorPurple}
+ul {list-style:none; padding:0}
+p,
+ul {margin: 0}
+html, body {display:flex;min-height:100vh;height: 100%;flex-direction:column;letter-spacing: 0.015em;line-height: $font-height-default;font-family: $font-family-default; font-size: $font-size-default; font-weight: $font-weight-default; color: $text-color-default; -moz-osx-font-smoothing:grayscale; -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;background: $colorPurple}
+
+//.page-wrap {padding-top: 60px}
+
+#tracy-debug-bar,
+#nette-debug {z-index:987654}
+
+.bg--light {background: $colorPurpleLighter}
+.bg--dark {background: $colorPurpleDarker}
+
+.form-control,
+.form-control:focus {color: #828F92;background: transparent;border: 1px solid #828F92;height: 56px;padding: 16px;border-radius: 7px;}
+.has-error .form-control {border-color: red}
+.form-check-label {font-size: 12px;color: #828F92}
+
+iframe {border: none}
+.videoBlock .video-wrap {height: 60vh}
+.ctaBlock {margin-top: 15px}
+
+//reboot
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+h1 {font-size: 35px;font-weight: 700;letter-spacing: 0;line-height: 1.5em}
+h2 {font-size: 24px;font-weight: 500;letter-spacing: 0;line-height: 1.12em}
+
+@media ($media-s-min) {
+  .ctaBlock {margin-top: 0px}
+  h1 {font-size: 45px;}
+}
+
+@media ($media-m-min) {
+  .ctaBlock {margin-top: 0px}
+}
+
+@media ($media-l-min) {
+  h1 {font-size: 55px}
+}
+
+@media ($media-xl-min) {
+  h1 {font-size: 65px}
+}
+
+@media ($media-xxl-min) {
+  h1 {font-size: 70px}
+}

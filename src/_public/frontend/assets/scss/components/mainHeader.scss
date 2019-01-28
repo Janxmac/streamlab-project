@@ -1,0 +1,21 @@
+.mainHeader {height: auto;overflow: hidden;padding-top: 165px;}
+.mainHeader .bg {background-image: url("../img/img-included/bg-img.jpg");@include absoluteFull;background-size: cover;background-position: center top}
+.mainHeader .bg-overlay {background: linear-gradient(180deg, rgba(51,10,139,0.6) 0%, rgba(51,10,139,1) 90%);@include absoluteFull;}
+.mainHeader .content {margin-bottom: 2.1rem}
+.mainHeader form {margin-top: 24px}
+.mainHeader form button {margin-top: 22px}
+
+@media ($media-m-min) {
+  .mainHeader {height: 500px;}
+}
+
+@media ($media-l-min) {
+  .mainHeader form {margin-top: 30px}
+}
+
+@media ($media-xl-min) {
+  .mainHeader form {margin-top: 34px}
+}
+
+
+

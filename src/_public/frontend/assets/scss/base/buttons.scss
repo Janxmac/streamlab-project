@@ -1,0 +1,45 @@
+.btn {
+  &,
+  &:hover,
+  &.active,
+  &:focus {outline: 0 !important;box-shadow: none !important;padding: 1.2rem 2rem;font-size: 14px;line-height: 1.25;letter-spacing: 0.015em}
+
+  &.btn--pill {border-radius: 60px}
+}
+
+.btn-pink {
+  color: $white;background-color: $colorPink;border-color: $colorPink;
+
+  &:focus,
+  &:hover {
+    border-color: $colorPink;
+    background: transparent;
+    color: $white;
+  }
+}
+
+.btn-outline {
+  color: #9816f4;background-color: transparent;background-image: none;border-color: #9816f4;
+
+  &:focus,
+  &:hover {
+    border-color: #9816f4;
+    background: #9816f4;
+    color: #ffffff;
+  }
+}
+
+.btn--small {
+  &,
+  &:focus,
+  &:hover {padding: 0.8rem 3rem;font-size: 1rem;}
+}
+
+@media ($media-s-min) {
+  .btn {
+    &,
+    &:hover,
+    &.active,
+    &:focus {font-size: 16px;padding: 1.5rem 3rem;}
+  }
+}
